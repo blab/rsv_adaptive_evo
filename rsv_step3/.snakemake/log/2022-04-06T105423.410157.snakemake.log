@@ -1,0 +1,162 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count    min threads    max threads
+-----------------  -------  -------------  -------------
+add_branch_labels        2              1              1
+all                      1              1              1
+ancestral                2              1              1
+export                   2              1              1
+infer_insertions         2              1              1
+refine                   2              1              1
+translate                2              1              1
+tree                     2              1              1
+total                   15              1              1
+
+Select jobs to execute...
+
+[Wed Apr  6 10:54:24 2022]
+Job 11: Building tree
+
+
+[Wed Apr  6 10:54:24 2022]
+Job 4: Building tree
+
+[Wed Apr  6 10:57:29 2022]
+Finished job 11.
+1 of 15 steps (7%) done
+Select jobs to execute...
+
+[Wed Apr  6 10:57:29 2022]
+Job 10: 
+        Refining tree
+          - estimate timetree
+          - use opt coalescent timescale
+          - estimate marginal node dates
+          - filter tips more than 4 IQDs from clock expectation
+        
+
+[Wed Apr  6 11:00:07 2022]
+Finished job 4.
+2 of 15 steps (13%) done
+Select jobs to execute...
+
+[Wed Apr  6 11:00:07 2022]
+Job 3: 
+        Refining tree
+          - estimate timetree
+          - use opt coalescent timescale
+          - estimate marginal node dates
+          - filter tips more than 4 IQDs from clock expectation
+        
+
+[Wed Apr  6 11:08:32 2022]
+Finished job 10.
+3 of 15 steps (20%) done
+Select jobs to execute...
+
+[Wed Apr  6 11:08:33 2022]
+Job 12: Reconstructing ancestral sequences and mutations
+
+
+[Wed Apr  6 11:08:33 2022]
+rule infer_insertions:
+    input: data/insertions_B_step2.tsv, results/tree_B.nwk, config/genemap_B_step3.gff
+    output: results/insertions_B.json
+    log: logs/infer_insertions_B.txt
+    jobid: 14
+    wildcards: subtype=B
+    resources: tmpdir=/var/folders/g_/6938g_6s199gxxswt2nf7w500000gn/T
+
+[Wed Apr  6 11:08:36 2022]
+Finished job 14.
+4 of 15 steps (27%) done
+[Wed Apr  6 11:09:07 2022]
+Finished job 12.
+5 of 15 steps (33%) done
+Select jobs to execute...
+
+[Wed Apr  6 11:09:07 2022]
+Job 13: Translating amino acid sequences
+
+[Wed Apr  6 11:09:11 2022]
+Finished job 13.
+6 of 15 steps (40%) done
+Select jobs to execute...
+
+[Wed Apr  6 11:09:11 2022]
+Job 9: Exporting data files for for auspice
+
+[Wed Apr  6 11:09:14 2022]
+Finished job 9.
+7 of 15 steps (47%) done
+Select jobs to execute...
+
+[Wed Apr  6 11:09:14 2022]
+Job 8: Adding custom branch labels to the Auspice JSON
+
+[Wed Apr  6 11:09:14 2022]
+Finished job 8.
+8 of 15 steps (53%) done
+[Wed Apr  6 11:14:48 2022]
+Finished job 3.
+9 of 15 steps (60%) done
+Select jobs to execute...
+
+[Wed Apr  6 11:14:49 2022]
+Job 5: Reconstructing ancestral sequences and mutations
+
+
+[Wed Apr  6 11:14:49 2022]
+rule infer_insertions:
+    input: data/insertions_A_step2.tsv, results/tree_A.nwk, config/genemap_A_step3.gff
+    output: results/insertions_A.json
+    log: logs/infer_insertions_A.txt
+    jobid: 7
+    wildcards: subtype=A
+    resources: tmpdir=/var/folders/g_/6938g_6s199gxxswt2nf7w500000gn/T
+
+[Wed Apr  6 11:14:51 2022]
+Finished job 7.
+10 of 15 steps (67%) done
+[Wed Apr  6 11:15:35 2022]
+Finished job 5.
+11 of 15 steps (73%) done
+Select jobs to execute...
+
+[Wed Apr  6 11:15:35 2022]
+Job 6: Translating amino acid sequences
+
+[Wed Apr  6 11:15:41 2022]
+Finished job 6.
+12 of 15 steps (80%) done
+Select jobs to execute...
+
+[Wed Apr  6 11:15:41 2022]
+Job 2: Exporting data files for for auspice
+
+[Wed Apr  6 11:15:44 2022]
+Finished job 2.
+13 of 15 steps (87%) done
+Select jobs to execute...
+
+[Wed Apr  6 11:15:44 2022]
+Job 1: Adding custom branch labels to the Auspice JSON
+
+[Wed Apr  6 11:15:44 2022]
+Finished job 1.
+14 of 15 steps (93%) done
+Select jobs to execute...
+
+[Wed Apr  6 11:15:44 2022]
+localrule all:
+    input: auspice/rsv_A.json, auspice/rsv_B.json
+    jobid: 0
+    resources: tmpdir=/var/folders/g_/6938g_6s199gxxswt2nf7w500000gn/T
+
+[Wed Apr  6 11:15:44 2022]
+Finished job 0.
+15 of 15 steps (100%) done
+Complete log: .snakemake/log/2022-04-06T105423.410157.snakemake.log

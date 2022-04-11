@@ -1,0 +1,96 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count    min threads    max threads
+-----------------  -------  -------------  -------------
+add_branch_labels        1              1              1
+all                      1              1              1
+ancestral                1              1              1
+export                   1              1              1
+infer_insertions         1              1              1
+refine                   1              1              1
+translate                1              1              1
+tree                     1              1              1
+total                    8              1              1
+
+Select jobs to execute...
+
+[Tue Apr  5 12:13:53 2022]
+Job 14: Building tree
+
+[Tue Apr  5 12:16:49 2022]
+Finished job 14.
+1 of 8 steps (12%) done
+Select jobs to execute...
+
+[Tue Apr  5 12:16:49 2022]
+Job 13: 
+        Refining tree
+          - estimate timetree
+          - use opt coalescent timescale
+          - estimate marginal node dates
+          - filter tips more than 4 IQDs from clock expectation
+        
+
+[Tue Apr  5 12:27:41 2022]
+Finished job 13.
+2 of 8 steps (25%) done
+Select jobs to execute...
+
+[Tue Apr  5 12:27:42 2022]
+Job 18: Reconstructing ancestral sequences and mutations
+
+
+[Tue Apr  5 12:27:42 2022]
+rule infer_insertions:
+    input: results/insertions_B.tsv, results/tree_B.nwk, config/genemap_B_step1.gff
+    output: results/insertions_B.json
+    log: logs/infer_insertions_B.txt
+    jobid: 20
+    wildcards: subtype=B
+    resources: tmpdir=/var/folders/g_/6938g_6s199gxxswt2nf7w500000gn/T
+
+[Tue Apr  5 12:27:45 2022]
+Finished job 20.
+3 of 8 steps (38%) done
+[Tue Apr  5 12:28:16 2022]
+Finished job 18.
+4 of 8 steps (50%) done
+Select jobs to execute...
+
+[Tue Apr  5 12:28:16 2022]
+Job 19: Translating amino acid sequences
+
+[Tue Apr  5 12:28:21 2022]
+Finished job 19.
+5 of 8 steps (62%) done
+Select jobs to execute...
+
+[Tue Apr  5 12:28:21 2022]
+Job 12: Exporting data files for for auspice
+
+[Tue Apr  5 12:28:23 2022]
+Finished job 12.
+6 of 8 steps (75%) done
+Select jobs to execute...
+
+[Tue Apr  5 12:28:23 2022]
+Job 11: Adding custom branch labels to the Auspice JSON
+
+[Tue Apr  5 12:28:23 2022]
+Finished job 11.
+7 of 8 steps (88%) done
+Select jobs to execute...
+
+[Tue Apr  5 12:28:23 2022]
+localrule all:
+    input: auspice/rsv_A.json, auspice/rsv_B.json
+    jobid: 0
+    resources: tmpdir=/var/folders/g_/6938g_6s199gxxswt2nf7w500000gn/T
+
+[Tue Apr  5 12:28:23 2022]
+Finished job 0.
+8 of 8 steps (100%) done
+Complete log: .snakemake/log/2022-04-05T121353.182564.snakemake.log

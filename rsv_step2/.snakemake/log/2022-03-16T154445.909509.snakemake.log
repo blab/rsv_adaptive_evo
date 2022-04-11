@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count    min threads    max threads
+-----------------  -------  -------------  -------------
+add_branch_labels        1              1              1
+all                      1              1              1
+total                    2              1              1
+
+Select jobs to execute...
+
+[Wed Mar 16 15:44:46 2022]
+Job 10: Adding custom branch labels to the Auspice JSON
+
+[Wed Mar 16 15:44:46 2022]
+Finished job 10.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Wed Mar 16 15:44:46 2022]
+localrule all:
+    input: auspice/rsv_A.json, results/insertions_A.json, auspice/rsv_A_testlabels.json
+    jobid: 0
+    resources: tmpdir=/var/folders/g_/6938g_6s199gxxswt2nf7w500000gn/T
+
+[Wed Mar 16 15:44:46 2022]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /Users/katekistler/nextstrain/rsv_testing/.snakemake/log/2022-03-16T154445.909509.snakemake.log

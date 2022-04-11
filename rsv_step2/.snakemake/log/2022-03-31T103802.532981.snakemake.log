@@ -1,0 +1,70 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count    min threads    max threads
+-----------------  -------  -------------  -------------
+add_branch_labels        1              1              1
+align                    1              1              1
+all                      1              1              1
+ancestral                1              1              1
+export                   1              1              1
+filter                   1              1              1
+infer_insertions         1              1              1
+parse                    1              1              1
+refine                   1              1              1
+translate                1              1              1
+tree                     1              1              1
+total                   11              1              1
+
+Select jobs to execute...
+
+[Thu Mar 31 10:38:02 2022]
+Job 7: Parsing fasta into sequences and metadata
+
+[Thu Mar 31 10:38:04 2022]
+Finished job 7.
+1 of 11 steps (9%) done
+Select jobs to execute...
+
+[Thu Mar 31 10:38:04 2022]
+Job 6: 
+        Filtering to
+          - 100 sequence(s) per country year
+          - excluding strains in config/dropped_strains.txt
+        
+
+[Thu Mar 31 10:38:05 2022]
+Finished job 6.
+2 of 11 steps (18%) done
+Select jobs to execute...
+
+[Thu Mar 31 10:38:05 2022]
+Job 5: 
+        Aligning sequences to config/rsv_A_step1_reference.fasta
+            - gaps relative to reference are considered real
+        
+
+[Thu Mar 31 10:38:14 2022]
+Finished job 5.
+3 of 11 steps (27%) done
+Select jobs to execute...
+
+[Thu Mar 31 10:38:14 2022]
+Job 4: Building tree
+
+[Thu Mar 31 10:43:06 2022]
+Finished job 4.
+4 of 11 steps (36%) done
+Select jobs to execute...
+
+[Thu Mar 31 10:43:06 2022]
+Job 3: 
+        Refining tree
+          - estimate timetree
+          - use opt coalescent timescale
+          - estimate marginal node dates
+          - filter tips more than 4 IQDs from clock expectation
+        
+

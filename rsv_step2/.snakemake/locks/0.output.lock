@@ -1,0 +1,13 @@
+results/sequences_A.fasta
+results/metadata_A.tsv
+results/nt_muts_A.json
+results/insertions_A.json
+auspice/rsv_A_noinsertions.json
+results/tree_A.nwk
+results/branch_lengths_A.json
+results/aligned_A.fasta
+results/insertions_A.tsv
+results/aa_muts_A.json
+auspice/rsv_A.json
+results/tree_raw_A.nwk
+results/filtered_A.fasta

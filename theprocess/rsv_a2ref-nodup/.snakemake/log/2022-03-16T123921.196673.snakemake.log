@@ -1,0 +1,38 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+align            1              1              1
+all              1              1              1
+ancestral        1              1              1
+export           1              1              1
+refine           1              1              1
+translate        1              1              1
+tree             1              1              1
+total            7              1              1
+
+Select jobs to execute...
+
+[Wed Mar 16 12:39:21 2022]
+Job 4: 
+        Aligning sequences to config/rsv_reference.gb
+            - gaps relative to reference are considered real
+        
+
+[Wed Mar 16 12:39:21 2022]
+Error in rule align:
+    jobid: 4
+    output: results/aligned_A_genome.fasta, results/insertions_A_genome.tsv, results/translations/aligned.A_genome.N.fasta, results/translations/aligned.A_genome.P.fasta, results/translations/aligned.A_genome.M.fasta, results/translations/aligned.A_genome.SH.fasta, results/translations/aligned.A_genome.G.fasta, results/translations/aligned.A_genome.F.fasta, results/translations/aligned.A_genome.M2.fasta, results/translations/aligned.A_genome.L.fasta
+    log: logs/align_A_genome.txt (check log file(s) for error message)
+    shell:
+        
+        nextalign             --jobs=1             --reference config/rsv_reference.gb             --genemap config/genemap.gff             --genes N,P,M,SH,G,F,M2,L             --sequences results/filtered_A_genome.fasta             --output-dir results/translations             --output-basename nextalign             --output-fasta results/aligned_A_genome.fasta             --output-insertions results/insertions_A_genome.tsv > logs/align_A_genome.txt 2>&1
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /Users/katekistler/nextstrain/rsv_testing/.snakemake/log/2022-03-16T123921.196673.snakemake.log

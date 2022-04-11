@@ -1,0 +1,227 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+align            3              1              1
+all              1              1              1
+ancestral        3              1              1
+export           3              1              1
+filter           3              1              1
+parse            3              1              1
+refine           3              1              1
+translate        3              1              1
+tree             3              1              1
+total           25              1              1
+
+Select jobs to execute...
+
+[Wed Mar  9 17:49:32 2022]
+Job 70: Parsing fasta into sequences and metadata
+
+
+[Wed Mar  9 17:49:32 2022]
+Job 54: Parsing fasta into sequences and metadata
+
+
+[Wed Mar  9 17:49:32 2022]
+Job 62: Parsing fasta into sequences and metadata
+
+[Wed Mar  9 17:49:37 2022]
+Finished job 62.
+1 of 25 steps (4%) done
+Select jobs to execute...
+
+[Wed Mar  9 17:49:37 2022]
+Job 61: 
+        Filtering to
+          - 100 sequence(s) per country year month
+          - excluding strains in config/dropped_strains.txt
+        
+
+[Wed Mar  9 17:49:38 2022]
+Finished job 54.
+2 of 25 steps (8%) done
+Select jobs to execute...
+
+[Wed Mar  9 17:49:38 2022]
+Job 53: 
+        Filtering to
+          - 100 sequence(s) per country year month
+          - excluding strains in config/dropped_strains.txt
+        
+
+[Wed Mar  9 17:49:39 2022]
+Finished job 70.
+3 of 25 steps (12%) done
+Select jobs to execute...
+
+[Wed Mar  9 17:49:39 2022]
+Job 69: 
+        Filtering to
+          - 100 sequence(s) per country year month
+          - excluding strains in config/dropped_strains.txt
+        
+
+[Wed Mar  9 17:49:43 2022]
+Finished job 61.
+4 of 25 steps (16%) done
+Select jobs to execute...
+
+[Wed Mar  9 17:49:43 2022]
+Job 60: 
+        Aligning sequences to config/rsv_reference.gb
+          - filling gaps with N
+        
+
+[Wed Mar  9 17:49:44 2022]
+Finished job 53.
+5 of 25 steps (20%) done
+Select jobs to execute...
+
+[Wed Mar  9 17:49:44 2022]
+Job 52: 
+        Aligning sequences to config/rsv_reference.gb
+          - filling gaps with N
+        
+
+[Wed Mar  9 17:49:48 2022]
+Finished job 69.
+6 of 25 steps (24%) done
+Select jobs to execute...
+
+[Wed Mar  9 17:49:48 2022]
+Job 68: 
+        Aligning sequences to config/rsv_reference.gb
+          - filling gaps with N
+        
+
+[Wed Mar  9 17:52:35 2022]
+Finished job 60.
+7 of 25 steps (28%) done
+Select jobs to execute...
+
+[Wed Mar  9 17:52:35 2022]
+Job 59: Building tree
+
+[Wed Mar  9 17:53:49 2022]
+Finished job 52.
+8 of 25 steps (32%) done
+Select jobs to execute...
+
+[Wed Mar  9 17:53:49 2022]
+Job 51: Building tree
+
+[Wed Mar  9 17:53:59 2022]
+Finished job 59.
+9 of 25 steps (36%) done
+Select jobs to execute...
+
+[Wed Mar  9 17:53:59 2022]
+Job 58: 
+        Refining tree
+          - estimate timetree
+          - use opt coalescent timescale
+          - estimate marginal node dates
+          - filter tips more than 4 IQDs from clock expectation
+        
+
+[Wed Mar  9 17:55:11 2022]
+Finished job 51.
+10 of 25 steps (40%) done
+Select jobs to execute...
+
+[Wed Mar  9 17:55:11 2022]
+Job 50: 
+        Refining tree
+          - estimate timetree
+          - use opt coalescent timescale
+          - estimate marginal node dates
+          - filter tips more than 4 IQDs from clock expectation
+        
+
+[Wed Mar  9 18:23:26 2022]
+Finished job 68.
+11 of 25 steps (44%) done
+Select jobs to execute...
+
+[Wed Mar  9 18:23:26 2022]
+Job 67: Building tree
+
+[Wed Mar  9 18:43:08 2022]
+Finished job 67.
+12 of 25 steps (48%) done
+Select jobs to execute...
+
+[Wed Mar  9 18:43:08 2022]
+Job 66: 
+        Refining tree
+          - estimate timetree
+          - use opt coalescent timescale
+          - estimate marginal node dates
+          - filter tips more than 4 IQDs from clock expectation
+        
+
+[Wed Mar  9 19:02:23 2022]
+Finished job 50.
+13 of 25 steps (52%) done
+Select jobs to execute...
+
+[Wed Mar  9 19:02:23 2022]
+Job 55: Reconstructing ancestral sequences and mutations
+
+[Wed Mar  9 19:02:57 2022]
+Finished job 58.
+14 of 25 steps (56%) done
+Select jobs to execute...
+
+[Wed Mar  9 19:02:57 2022]
+Job 63: Reconstructing ancestral sequences and mutations
+
+[Wed Mar  9 19:05:19 2022]
+Finished job 55.
+15 of 25 steps (60%) done
+Select jobs to execute...
+
+[Wed Mar  9 19:05:19 2022]
+Job 56: Translating amino acid sequences
+
+[Wed Mar  9 19:05:48 2022]
+Finished job 63.
+16 of 25 steps (64%) done
+Select jobs to execute...
+
+[Wed Mar  9 19:05:48 2022]
+Job 64: Translating amino acid sequences
+
+[Wed Mar  9 19:06:09 2022]
+Finished job 56.
+17 of 25 steps (68%) done
+Select jobs to execute...
+
+[Wed Mar  9 19:06:09 2022]
+Job 49: Exporting data files for for auspice
+
+[Wed Mar  9 19:06:15 2022]
+Error in rule export:
+    jobid: 49
+    output: auspice/rsv_all_F.json
+    shell:
+        
+        augur export v2             --tree results/tree_all_F.nwk             --metadata results/metadata_all_F.tsv             --node-data results/branch_lengths_all_F.json results/nt_muts_all_F.json results/aa_muts_all_F.json             --auspice-config config/auspice_config.json             --description config/description.md             --include-root-sequence             --output auspice/rsv_all_F.json
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job export since they might be corrupted:
+auspice/rsv_all_F.json
+[Wed Mar  9 19:06:30 2022]
+Finished job 64.
+18 of 25 steps (72%) done
+[Wed Mar  9 20:33:21 2022]
+Finished job 66.
+19 of 25 steps (76%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /Users/katekistler/nextstrain/rsv/.snakemake/log/2022-03-09T174931.538449.snakemake.log

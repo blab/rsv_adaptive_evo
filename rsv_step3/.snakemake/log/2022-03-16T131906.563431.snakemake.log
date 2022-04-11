@@ -1,0 +1,42 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+align            1              1              1
+all              1              1              1
+ancestral        1              1              1
+export           1              1              1
+refine           1              1              1
+translate        1              1              1
+tree             1              1              1
+total            7              1              1
+
+Select jobs to execute...
+
+[Wed Mar 16 13:19:06 2022]
+Job 4: 
+        Aligning sequences to config/rsv_reference.fasta
+            - gaps relative to reference are considered real
+        
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 66 of /Users/katekistler/nextstrain/rsv_testing/Snakefile:
+Job Missing files after 5 seconds:
+results/translations/aligned_A.gene.N.fasta
+results/translations/aligned_A.gene.P.fasta
+results/translations/aligned_A.gene.M.fasta
+results/translations/aligned_A.gene.SH.fasta
+results/translations/aligned_A.gene.G.fasta
+results/translations/aligned_A.gene.F.fasta
+results/translations/aligned_A.gene.M2.fasta
+results/translations/aligned_A.gene.L.fasta
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 4 completed successfully, but some output files are missing. 4
+Removing output files of failed job align since they might be corrupted:
+results/aligned_A.fasta, results/insertions_A.tsv
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /Users/katekistler/nextstrain/rsv_testing/.snakemake/log/2022-03-16T131906.563431.snakemake.log

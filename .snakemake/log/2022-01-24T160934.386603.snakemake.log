@@ -1,0 +1,259 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+align            3              1              1
+all              1              1              1
+ancestral        3              1              1
+export           3              1              1
+filter           3              1              1
+parse            3              1              1
+refine           3              1              1
+translate        3              1              1
+tree             3              1              1
+total           25              1              1
+
+Select jobs to execute...
+
+[Mon Jan 24 16:09:35 2022]
+Job 22: Parsing fasta into sequences and metadata
+
+
+[Mon Jan 24 16:09:35 2022]
+Job 14: Parsing fasta into sequences and metadata
+
+
+[Mon Jan 24 16:09:35 2022]
+Job 6: Parsing fasta into sequences and metadata
+
+[Mon Jan 24 16:09:39 2022]
+Finished job 14.
+1 of 25 steps (4%) done
+Select jobs to execute...
+
+[Mon Jan 24 16:09:39 2022]
+Job 13: 
+        Filtering to
+          - 100 sequence(s) per country year month
+          - excluding strains in config/dropped_strains.txt
+        
+
+[Mon Jan 24 16:09:39 2022]
+Finished job 6.
+2 of 25 steps (8%) done
+Select jobs to execute...
+
+[Mon Jan 24 16:09:39 2022]
+Job 5: 
+        Filtering to
+          - 100 sequence(s) per country year month
+          - excluding strains in config/dropped_strains.txt
+        
+
+[Mon Jan 24 16:09:40 2022]
+Finished job 22.
+3 of 25 steps (12%) done
+Select jobs to execute...
+
+[Mon Jan 24 16:09:40 2022]
+Job 21: 
+        Filtering to
+          - 100 sequence(s) per country year month
+          - excluding strains in config/dropped_strains.txt
+        
+
+[Mon Jan 24 16:09:43 2022]
+Finished job 13.
+4 of 25 steps (16%) done
+Select jobs to execute...
+
+[Mon Jan 24 16:09:43 2022]
+Job 12: 
+        Aligning sequences to config/rsv_reference.gb
+          - filling gaps with N
+        
+
+[Mon Jan 24 16:09:44 2022]
+Finished job 5.
+5 of 25 steps (20%) done
+Select jobs to execute...
+
+[Mon Jan 24 16:09:44 2022]
+Job 4: 
+        Aligning sequences to config/rsv_reference.gb
+          - filling gaps with N
+        
+
+[Mon Jan 24 16:09:46 2022]
+Finished job 21.
+6 of 25 steps (24%) done
+Select jobs to execute...
+
+[Mon Jan 24 16:09:46 2022]
+Job 20: 
+        Aligning sequences to config/rsv_reference.gb
+          - filling gaps with N
+        
+
+[Mon Jan 24 16:18:07 2022]
+Finished job 12.
+7 of 25 steps (28%) done
+Select jobs to execute...
+
+[Mon Jan 24 16:18:07 2022]
+Job 11: Building tree
+
+[Mon Jan 24 16:21:20 2022]
+Finished job 4.
+8 of 25 steps (32%) done
+Select jobs to execute...
+
+[Mon Jan 24 16:21:20 2022]
+Job 3: Building tree
+
+[Mon Jan 24 16:22:27 2022]
+Finished job 11.
+9 of 25 steps (36%) done
+Select jobs to execute...
+
+[Mon Jan 24 16:22:27 2022]
+Job 10: 
+        Refining tree
+          - estimate timetree
+          - use opt coalescent timescale
+          - estimate marginal node dates
+          - filter tips more than 4 IQDs from clock expectation
+        
+
+[Mon Jan 24 16:28:45 2022]
+Finished job 3.
+10 of 25 steps (40%) done
+Select jobs to execute...
+
+[Mon Jan 24 16:28:45 2022]
+Job 2: 
+        Refining tree
+          - estimate timetree
+          - use opt coalescent timescale
+          - estimate marginal node dates
+          - filter tips more than 4 IQDs from clock expectation
+        
+
+[Mon Jan 24 16:39:14 2022]
+Finished job 20.
+11 of 25 steps (44%) done
+Select jobs to execute...
+
+[Mon Jan 24 16:39:14 2022]
+Job 19: Building tree
+
+[Mon Jan 24 17:02:23 2022]
+Finished job 19.
+12 of 25 steps (48%) done
+Select jobs to execute...
+
+[Mon Jan 24 17:02:23 2022]
+Job 18: 
+        Refining tree
+          - estimate timetree
+          - use opt coalescent timescale
+          - estimate marginal node dates
+          - filter tips more than 4 IQDs from clock expectation
+        
+
+[Mon Jan 24 17:02:24 2022]
+Finished job 10.
+13 of 25 steps (52%) done
+Select jobs to execute...
+
+[Mon Jan 24 17:02:24 2022]
+Job 15: Reconstructing ancestral sequences and mutations
+
+[Mon Jan 24 17:03:53 2022]
+Finished job 15.
+14 of 25 steps (56%) done
+Select jobs to execute...
+
+[Mon Jan 24 17:03:53 2022]
+Job 16: Translating amino acid sequences
+
+[Mon Jan 24 17:04:08 2022]
+Finished job 16.
+15 of 25 steps (60%) done
+Select jobs to execute...
+
+[Mon Jan 24 17:04:09 2022]
+Job 9: Exporting data files for for auspice
+
+[Mon Jan 24 17:04:17 2022]
+Finished job 9.
+16 of 25 steps (64%) done
+[Mon Jan 24 17:18:50 2022]
+Finished job 2.
+17 of 25 steps (68%) done
+Select jobs to execute...
+
+[Mon Jan 24 17:18:50 2022]
+Job 7: Reconstructing ancestral sequences and mutations
+
+[Mon Jan 24 17:20:34 2022]
+Finished job 7.
+18 of 25 steps (72%) done
+Select jobs to execute...
+
+[Mon Jan 24 17:20:34 2022]
+Job 8: Translating amino acid sequences
+
+[Mon Jan 24 17:20:49 2022]
+Finished job 8.
+19 of 25 steps (76%) done
+Select jobs to execute...
+
+[Mon Jan 24 17:20:49 2022]
+Job 1: Exporting data files for for auspice
+
+[Mon Jan 24 17:20:56 2022]
+Finished job 1.
+20 of 25 steps (80%) done
+[Mon Jan 24 18:02:21 2022]
+Finished job 18.
+21 of 25 steps (84%) done
+Select jobs to execute...
+
+[Mon Jan 24 18:02:22 2022]
+Job 23: Reconstructing ancestral sequences and mutations
+
+[Mon Jan 24 18:04:54 2022]
+Finished job 23.
+22 of 25 steps (88%) done
+Select jobs to execute...
+
+[Mon Jan 24 18:04:54 2022]
+Job 24: Translating amino acid sequences
+
+[Mon Jan 24 18:05:10 2022]
+Finished job 24.
+23 of 25 steps (92%) done
+Select jobs to execute...
+
+[Mon Jan 24 18:05:10 2022]
+Job 17: Exporting data files for for auspice
+
+[Mon Jan 24 18:05:19 2022]
+Finished job 17.
+24 of 25 steps (96%) done
+Select jobs to execute...
+
+[Mon Jan 24 18:05:19 2022]
+localrule all:
+    input: auspice/rsv_A.json, auspice/rsv_B.json, auspice/rsv_all.json
+    jobid: 0
+    resources: tmpdir=/var/folders/g_/6938g_6s199gxxswt2nf7w500000gn/T
+
+[Mon Jan 24 18:05:19 2022]
+Finished job 0.
+25 of 25 steps (100%) done
+Complete log: /Users/katekistler/nextstrain/rsv/.snakemake/log/2022-01-24T160934.386603.snakemake.log

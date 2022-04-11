@@ -1,0 +1,61 @@
+LOCUS       AY333364                 981 bp    mRNA    linear   VRL 23-OCT-2003
+DEFINITION  Human respiratory syncytial virus strain BA4128/99B g glycoprotein
+            mRNA, complete cds.
+ACCESSION   AY333364
+VERSION     AY333364.1
+KEYWORDS    .
+SOURCE      Human orthopneumovirus (HRSV)
+  ORGANISM  Human orthopneumovirus
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Haploviricotina; Monjiviricetes; Mononegavirales; Pneumoviridae;
+            Orthopneumovirus.
+REFERENCE   1  (bases 1 to 981)
+  AUTHORS   Trento,A., Galiano,M., Videla,C., Carballal,G., Garcia-Barreno,B.,
+            Melero,J.A. and Palomo,C.
+  TITLE     Major changes in the G protein of human respiratory syncytial virus
+            isolates introduced by a duplication of 60 nucleotides
+  JOURNAL   J. Gen. Virol. 84 (PT 11), 3115-3120 (2003)
+   PUBMED   14573817
+REFERENCE   2  (bases 1 to 981)
+  AUTHORS   Trento,A., Galiano,M., Palomo,C. and Melero,J.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (01-JUL-2003) Biologia Viral, Instituto de Salud Carlos
+            III, Ctra. Majadahonda-Pozuelo Km 2,2, Majadahonda, Madrid 28220,
+            Spain
+FEATURES             Location/Qualifiers
+     source          1..981
+                     /organism="Human orthopneumovirus"
+                     /mol_type="mRNA"
+                     /strain="BA4128/99B"
+                     /db_xref="taxon:11250"
+                     /note="group: B"
+     CDS             16..963
+                     /note="attachment glycoprotein"
+                     /codon_start=1
+                     /product="g glycoprotein"
+                     /protein_id="AAQ16179.1"
+                     /translation="MSKNKNQRTARTLEKTWDTLNHLIVISSCLYKLNLKSIAQIALS
+                     VLAMIISTSLIIAAIIFIISANHKVTLTTVTVQTIKNHTEKNITTYLTQVSPERVSPS
+                     KQLTTTPPIYTNSATISPNTKSETHHTTAQTKGRTTTPTQNNKPSTKPRPKNPPKKPK
+                     DDYHFEVFNFVPCSICGNNQLCKSICKTIPSNKPKKKPTIKPTNKPPTKTTNKRDPKK
+                     LAKTLKKETTINPTKKPTPKTTERDTSTSQSTVLDTTTSKHTERDTSTSQSTVLDTTT
+                     SKHTIQQQSLHSTTPENTPNSTQTPTASEPSTSNSTQKL"
+ORIGIN      
+        1 ggggcaaatg caaccatgtc caaaaacaag aatcaacgca ctgccaggac tctagaaaag
+       61 acctgggata ctcttaatca tctaattgta atatcctctt gtttatacaa attaaattta
+      121 aaatctatag cacaaatagc actatcagtt ttggcaatga taatctcaac ctctctcata
+      181 attgcagcca taatattcat catctctgcc aatcacaaag ttacactaac aactgtcaca
+      241 gttcaaacaa taaaaaacca cactgagaaa aacatcacca cttaccttac tcaagtctca
+      301 ccagaaaggg ttagcccatc caaacaactc acaaccacac caccaatcta cacaaactca
+      361 gccacaatat cacctaatac aaaatcagaa acacaccata caacagcaca aaccaaaggc
+      421 agaaccacca ctccaacaca gaacaacaag ccaagcacaa aaccacgtcc aaaaaatcca
+      481 ccaaaaaaac caaaagatga ttaccatttt gaagtgttca acttcgttcc ctgtagtata
+      541 tgtggcaaca atcaactctg caaatccatt tgcaaaacaa taccaagcaa taaaccaaag
+      601 aaaaaaccaa ccataaaacc cacaaacaaa ccacccacca aaaccacaaa caaaagagac
+      661 ccaaaaaaac tagccaaaac actgaaaaaa gaaaccacca tcaacccaac aaaaaaacca
+      721 acccccaaga ccacagaaag agacaccagc acctcacaat ccactgtgct cgacacaacc
+      781 acatcaaaac acacagaaag agacaccagc acctcacaat ccactgtgct cgacacaacc
+      841 acatcaaaac acacaatcca acagcaatcc ctccactcaa ccacccccga aaacacaccc
+      901 aactccacac aaacacccac agcatccgag ccctccacat caaattccac ccaaaaactc
+      961 tagtcatatg cttagttatt c
+//
