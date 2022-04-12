@@ -1,4 +1,0 @@
-Building DAG of jobs...
-WildcardError in line 185 of /Users/katekistler/nextstrain/rsv/Snakefile:
-Wildcards in input files cannot be determined from output files:
-'subtype'

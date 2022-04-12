@@ -1,3 +1,0 @@
-KeyError in line 88 of /Users/katekistler/nextstrain/rsv_testing/Snakefile:
-'conda_environment'
-  File "/Users/katekistler/nextstrain/rsv_testing/Snakefile", line 88, in <module>

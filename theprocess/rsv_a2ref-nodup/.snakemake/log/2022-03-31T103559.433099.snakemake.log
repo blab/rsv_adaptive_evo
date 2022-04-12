@@ -1,3 +1,0 @@
-NameError in line 5 of /Users/katekistler/nextstrain/rsv/rsv_step1/Snakefile:
-name 'CLADE' is not defined
-  File "/Users/katekistler/nextstrain/rsv/rsv_step1/Snakefile", line 5, in <module>

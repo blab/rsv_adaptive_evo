@@ -1,3 +1,0 @@
-AttributeError in line 61 of /Users/katekistler/nextstrain/rsv/Snakefile:
-'Params' object has no attribute 'dropped_strains'
-  File "/Users/katekistler/nextstrain/rsv/Snakefile", line 61, in <module>

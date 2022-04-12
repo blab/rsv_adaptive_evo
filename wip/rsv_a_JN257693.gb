@@ -1,0 +1,66 @@
+LOCUS       JN257693                 967 bp    cRNA    linear   VRL 06-APR-2012
+DEFINITION  Human respiratory syncytial virus strain ON67-1210A G glycoprotein
+            gene, complete cds.
+ACCESSION   JN257693
+VERSION     JN257693.1
+KEYWORDS    .
+SOURCE      Human orthopneumovirus (HRSV)
+  ORGANISM  Human orthopneumovirus
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Haploviricotina; Monjiviricetes; Mononegavirales; Pneumoviridae;
+            Orthopneumovirus.
+REFERENCE   1  (bases 1 to 967)
+  AUTHORS   Eshaghi,A., Duvvuri,V.R., Lai,R., Nadarajah,J.T., Li,A.,
+            Patel,S.N., Low,D.E. and Gubbay,J.B.
+  TITLE     Genetic variability of human respiratory syncytial virus a strains
+            circulating in ontario: a novel genotype with a 72 nucleotide g
+            gene duplication
+  JOURNAL   PLoS ONE 7 (3), E32807 (2012)
+   PUBMED   22470426
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (bases 1 to 967)
+  AUTHORS   Eshaghi,A., Lai,R., Nadarajah,J.T., Li,A., Patel,S.N., Gubbay,J.B.
+            and Low,D.E.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-JUL-2011) Molecular Research, Ontario Agency for
+            Health Protection and Promotion, 81 Resources Rd, Toronto, Ontario
+            M9P 3T1, Canada
+FEATURES             Location/Qualifiers
+     source          1..967
+                     /organism="Human orthopneumovirus"
+                     /mol_type="viral cRNA"
+                     /strain="ON67-1210A"
+                     /host="Homo sapiens; sex: M; age: 7 month"
+                     /db_xref="taxon:11250"
+                     /country="Canada: Ontario"
+                     /collection_date="29-Dec-2010"
+                     /note="genotype: A"
+     CDS             1..966
+                     /codon_start=1
+                     /product="G glycoprotein"
+                     /protein_id="AEQ98758.1"
+                     /translation="MSKTKDQRTAKTLERTWDTLNHLLFISSCLYKLNLKSIAQITLS
+                     ILAMIISTSLIIAAIIFIASANHKVTLTTAIIQDATNQIKNTTPTYLTQNPQLGISFS
+                     NLSGTTSQSTTILASTTPSAESTPQSTTVKIKNTTTTQILPSKPTTKQRQNKPQNKPN
+                     NDFHFEVFNFVPCSICSNNPTCWAICKRIPNKKPGKKTTTKPTKKPTLKTTKKDPKPQ
+                     TTKPKEVLTTKPTGKPTINTTKTNIRTTLLTSNTKGNPEHTSQEETLHSTTSEGYLSP
+                     SQVYTTSGQEETLHSTTSEGYLSPSQVYTTSEYLSQSLSSSNTTK"
+ORIGIN      
+        1 atgtccaaaa ccaaggacca acgcaccgcc aagacactag aaaggacctg ggacactctc
+       61 aatcatctgt tattcatatc atcgtgctta tacaagttaa atcttaaatc tatagcacaa
+      121 atcacattat ctattttggc aatgataatc tcaacctcac ttataattgc agccatcata
+      181 ttcatagcct cggcaaacca caaagtcaca ctaacaactg caatcataca agatgcaacg
+      241 aaccagatca agaacacaac cccaacatac ctcacccaga atccccagct tggaatcagc
+      301 ttctccaatc tgtccggaac tacatcacaa tccaccacca tactagcttc aacaacacca
+      361 agtgctgagt caaccccaca atccacaaca gtcaagatca aaaacacaac aacaacccaa
+      421 atattaccta gcaaacccac cacaaaacaa cgccaaaata aaccacaaaa caaacccaac
+      481 aatgattttc actttgaagt gttcaatttt gtaccctgca gcatatgcag caacaatcca
+      541 acctgctggg ccatctgcaa gagaatacca aacaaaaaac ctggaaagaa aaccaccacc
+      601 aagcccacaa aaaaaccaac cctcaagaca accaaaaaag atcccaaacc tcaaaccaca
+      661 aaaccaaagg aagtactcac taccaagcct acaggaaagc caaccatcaa caccactaaa
+      721 acaaacatca gaactacact gctcacctcc aacaccaaag gaaatccaga acacacaagt
+      781 caagaggaaa ccctccactc aaccacctcc gaaggctatc taagcccatc acaagtctat
+      841 acaacatccg gtcaagagga aaccctccac tcaaccacct ccgaaggcta tctaagccca
+      901 tcacaagtct atacaacatc cgagtaccta tcacaatctc tatcttcatc caacacaaca
+      961 aaatgat
+//

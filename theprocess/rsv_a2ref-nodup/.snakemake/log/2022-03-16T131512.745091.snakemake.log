@@ -1,7 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 21 of /Users/katekistler/nextstrain/rsv_testing/Snakefile:
-Missing input files for rule parse:
-    output: results/sequences_A.fasta, results/metadata_A.tsv
-    wildcards: subtype=A
-    affected files:
-        data/rsv_A.fasta
